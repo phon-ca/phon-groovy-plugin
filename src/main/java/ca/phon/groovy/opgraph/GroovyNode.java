@@ -17,19 +17,22 @@ import ca.phon.opgraph.nodes.general.script.*;
 /**
  * {@link OpNode} for groovy scripts.
  */
-@OpNodeInfo(category = "Script", description = "groovy script node", name = "groovy", showInLibrary = true)
+@OpNodeInfo(category = "General", description = "groovy script node", name = "Groovy Script", showInLibrary = true)
 public class GroovyNode extends OpNode implements NodeSettings {
 	
+	private final static String SCRIPT_TEMPLATE = """
+			def init(inputs, outputs) {
+			}
+			
+			def run(context) {
+			
+			}
+			""";
+	
 	private final static String INIT_FUNCTION = "init";
-	private final static String OPERATE_FUNCTION = "operate";
+	private final static String OPERATE_FUNCTION = "run";
 	
-	private InputField paramsInputField = new InputField("parameters", "Map of script parameters, these will override node settings.",
-			true, true, Map.class);
-
-	private OutputField paramsOutputField = new OutputField("parameters",
-			"Parameters used for script, including those entered using the node settings dialog", true, Map.class);
-	
-	private String scriptText = "";
+	private String scriptText = SCRIPT_TEMPLATE;
 	
 	private GroovyScriptPanel scriptPanel;
 	
@@ -37,9 +40,6 @@ public class GroovyNode extends OpNode implements NodeSettings {
 	
 	public GroovyNode() {
 		super();
-		
-		putField(paramsInputField);
-		putField(paramsOutputField);
 		
 		reloadFields();
 		
@@ -184,6 +184,4 @@ public class GroovyNode extends OpNode implements NodeSettings {
 		reloadFields();
 	}
 	
-	
-
 }
