@@ -4,7 +4,7 @@
   <artifactId>phon-groovy-plugin</artifactId>
   <name>Phon Groovy Plug-in</name>
   <description>groovy plug-in for Phon</description>
-  <version>2</version>
+  <version>1</version>
   
   <licenses>
     <license>
