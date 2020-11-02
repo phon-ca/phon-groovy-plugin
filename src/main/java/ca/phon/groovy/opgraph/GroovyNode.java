@@ -25,7 +25,6 @@ public class GroovyNode extends OpNode implements NodeSettings {
 			}
 			
 			def run(context) {
-			
 			}
 			""";
 	
