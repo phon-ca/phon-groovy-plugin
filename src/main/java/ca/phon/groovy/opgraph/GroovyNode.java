@@ -17,7 +17,7 @@ import ca.phon.opgraph.nodes.general.script.*;
 /**
  * {@link OpNode} for groovy scripts.
  */
-@OpNodeInfo(category = "General", description = "groovy script node", name = "Groovy Script", showInLibrary = true)
+@OpNodeInfo(category = "Scripting", description = "groovy script node", name = "Groovy Script", showInLibrary = true)
 public class GroovyNode extends OpNode implements NodeSettings {
 	
 	private final static String SCRIPT_TEMPLATE = """
