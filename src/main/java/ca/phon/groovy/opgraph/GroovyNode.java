@@ -1,6 +1,7 @@
 package ca.phon.groovy.opgraph;
 
 import java.awt.*;
+import java.awt.event.*;
 import java.util.*;
 import java.util.List;
 import java.util.stream.*;
@@ -165,6 +166,10 @@ public class GroovyNode extends OpNode implements NodeSettings {
 	public Component getComponent(GraphDocument document) {
 		if(scriptPanel == null) {
 			scriptPanel = new GroovyScriptPanel(scriptText);
+			scriptPanel.addPropertyChangeListener(GroovyScriptPanel.SCRIPT_UPDATED, (e) -> {
+				invocable = null;
+				reloadFields();
+			});
 		}
 		return scriptPanel;
 	}
