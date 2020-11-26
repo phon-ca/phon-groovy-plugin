@@ -1,0 +1,5 @@
+* Groovy Language plug-in for Phon
+
+This plug-in provides the opgraph node for including
+groovy scripts within Phon macros.
+
