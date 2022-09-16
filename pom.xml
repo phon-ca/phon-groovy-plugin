@@ -6,7 +6,7 @@
 	<artifactId>phon-groovy-plugin</artifactId>
 	<name>Phon Groovy Plug-in</name>
 	<description>groovy plug-in for Phon</description>
-	<version>6</version>
+	<version>7</version>
 
 	<distributionManagement>
 		<repository>
