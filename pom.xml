@@ -6,7 +6,7 @@
 	<artifactId>phon-groovy-plugin</artifactId>
 	<name>Phon Groovy Plug-in</name>
 	<description>groovy plug-in for Phon</description>
-	<version>8</version>
+	<version>9</version>
 
 	<distributionManagement>
 		<repository>
@@ -18,11 +18,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.build.sourceVersion>17</project.build.sourceVersion>
-		<project.build.targetVersion>17</project.build.targetVersion>
+		<project.build.sourceVersion>21</project.build.sourceVersion>
+		<project.build.targetVersion>21</project.build.targetVersion>
 
 		<ca.phon.version>4.0.0-SNAPSHOT</ca.phon.version>
-		<org.codehaus.groovy.version>3.0.12</org.codehaus.groovy.version>
+		<org.codehaus.groovy.version>3.0.25</org.codehaus.groovy.version>
 
 		<org.apache.maven.plugins.maven-compiler-plugin.version>3.8.0</org.apache.maven.plugins.maven-compiler-plugin.version>
 	</properties>
