@@ -34,7 +34,7 @@
 		<project.build.sourceVersion>21</project.build.sourceVersion>
 		<project.build.targetVersion>21</project.build.targetVersion>
 
-		<ca.phon.version>4.0.0-alpha.53</ca.phon.version>
+		<ca.phon.version>4.0.0-alpha.54</ca.phon.version>
 		<org.codehaus.groovy.version>3.0.25</org.codehaus.groovy.version>
 
 		<org.apache.maven.plugins.maven-compiler-plugin.version>3.8.0</org.apache.maven.plugins.maven-compiler-plugin.version>
